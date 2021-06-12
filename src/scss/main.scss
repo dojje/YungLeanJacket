@@ -28,6 +28,7 @@ body {
         flex-direction: column;
 
         max-width: 100%;
+        border-collapse: separate;
 
         .yungleanVideo {
             border: dashed 6px white;
@@ -74,7 +75,3 @@ body {
     }
 
 }
-
-
-
-

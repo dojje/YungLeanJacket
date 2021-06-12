@@ -72,6 +72,13 @@ $(document).ready(function() {
         }
         
     });
+
+
+    var isChromium = !!window.chrome;
+    if (isChromium) {
+        /* Borders are wierd on chrome so if the user uses chrome the border will be transparent*/
+        $(".yungleanVideo").css("border", "dashed 6px transparent")
+    }
 });
 
 $("#changeJacketStatus").click(function() {});

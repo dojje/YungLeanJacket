@@ -185,6 +185,12 @@ $(document).ready(function () {
       yungLeanWearingJacket = true;
     }
   });
+  var isChromium = !!window.chrome;
+
+  if (isChromium) {
+    /* Borders are wierd on chrome so if the user uses chrome the border will be transparent*/
+    $(".yungleanVideo").css("border", "dashed 6px transparent");
+  }
 });
 $("#changeJacketStatus").click(function () {});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -215,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36575" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37397" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
